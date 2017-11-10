@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title> Home </title>
+		<meta charset=”UTF-8”>
+		<link href = "styleHome.css"
+			rel = "stylesheet"
+			type = "text/css"/>
+		<!-- Latest compiled and minified CSS -->
+		<h1 id="Title"> Fox, Josiah </br> Assignment 10 </h1>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<h1><%=head%> </h1>
+		
+		 <p>Welcome to <%= head %></p>
+		<table class="refTable">
+				<tr>
+					<th> Page </th>
+					<th> Description </th>
+				</tr>
+				<tr>
+					<td> <A HREF="booksJson">Books - Json</A>
+					<td> Displays the list of books in the Json file</td>
+				</tr>
+				<tr>
+					<td> <A HREF="booksXML">Books - XML </A> </td>
+					<td> Displays the books from the XML file</td>				
+				</tr>
+				<tr>
+					<td> <A HREF="booksJsonraw">Books - Json (Raw) </A> </td>
+					<td> Displays the raw Json file with the book information</td>				
+				</tr>	
+				<tr>
+					<td> <A HREF="booksXMLraw">Books - XML (Raw) </A> </td>
+					<td> Displays the raw XML file with the book information</td>				
+				</tr>	
+				<tr>
+					<td> <A HREF="donutsJson">Donuts - Json</A>
+					<td> Displays the list of Donuts in the Json file</td>
+				</tr>
+				<tr>
+					<td> <A HREF="donutsXML">Donuts - XML </A> </td>
+					<td> Displays the Donuts from the XML file</td>				
+				</tr>
+				<tr>
+					<td> <A HREF="donutsJsonraw">Donuts - Json (Raw) </A> </td>
+					<td> Displays the raw Json file with the book information</td>				
+				</tr>	
+				<tr>
+					<td> <A HREF="donutsXMLraw">Donuts - XML (Raw) </A> </td>
+					<td> Displays the raw XML file with the book information</td>				
+				</tr>				
+			</table> 
+		
+		 <pre lang="JSON">{{<%=file%>}}</pre>
+
+		
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.js"
+		  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		  crossorigin="anonymous">
+		</script>
+	</body>
+</html>
+

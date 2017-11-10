@@ -1,0 +1,168 @@
+<items>
+	<item id="0001">
+		<type> donut </type>
+		<name> Cake </name>
+		<ppu> 0.55 </ppu>
+		<batters>
+			<batter id="1001">
+				<text> Regular </text>
+			</batter>
+			<batter id="1002">
+				<text> Chocolate </text>
+			</batter>
+			<batter id="1003">
+				<text> Devil's Food </text>
+			</batter>
+		</batters>
+		<topping id="5001">
+			<text> None </text>
+		</topping>
+		<topping id="5002">
+			<text> Glazed </text>
+		</topping>
+		<topping id="5003">
+			<text> Chocolate </text>
+		</topping>
+		<topping id="5004">
+			<text> Maple </text>
+		</topping>
+		<topping id="5005">
+			<text> Sugar </text>
+		</topping>
+		<topping id="5006">
+			<text> Choclate with Sprinkles </text>
+		</topping>
+		<topping id="5007">
+			<text> Powdered Sugar </text>
+		</topping>
+	</item>
+	
+	<item id="0002">
+		<type> donut </type>
+		<name> Raised </name>
+		<ppu> 0.55 </ppu>
+		<batters>
+			<batter id="1001">
+				<text> Regular </text>
+			</batter>
+		</batters>
+		<topping id="5001">
+			<text> None </text>
+		</topping>
+		<topping id="5002">
+			<text> Glazed </text>
+		</topping>
+		<topping id="5003">
+			<text> Chocolate </text>
+		</topping>
+		<topping id="5004">
+			<text> Maple </text>
+		</topping>
+		<topping id="5005">
+			<text> Sugar </text>
+	</item>
+			
+	<item id="0003">
+		<type> donut </type>
+		<name> Buttermilk </name>
+		<ppu> 0.55 </ppu>
+		<batters>
+			<batter id="1001">
+				<text> Regular </text>
+			</batter>
+			<batter id="1002">
+				<text> Chocolate </text>
+			</batter>
+		</batters>
+	</item>
+	
+	<item id="0004">
+		<type> bar </type>
+		<name> Bar </name>
+		<ppu> 0.75 </ppu>
+		<batters>
+			<batter id="1001">
+				<text> Regular </text>
+			</batter>
+		</batters>
+		<topping id="5003">
+			<text> Chocolate </text>
+		</topping>
+		<topping id="5004">
+			<text> Maple </text>
+		</topping>
+		<fillings>
+			<filling id="7001">
+				<name> None </name>
+				<addcost> 0 </addcost>
+			</filling>
+			<filling id="7002">
+				<name> Custard </name>
+				<addcost> 0.25 </addcost>
+			</filling>
+			<filling id="7003">
+				<name> Whipped Cream </name>
+				<addcost> 0.25 </addcost>
+			</filling>
+		</fillings>
+	</item>
+	
+	<item id="0005">
+		<type> twist </type>
+		<name> Twist </name>
+		<ppu> 0.65 </ppu>
+		<batters>
+			<batter id="1001">
+				<text> Regular </text>
+			</batter>
+		</batters>
+		<topping id="5002">
+			<text> Glazed </text>
+		</topping>
+		<topping id="5005">
+			<text> Sugar </text>
+		</topping>
+	</item>
+		
+		<item id="0006">
+		<type> filled </type>
+		<name> Filled </name>
+		<ppu> 0.75 </ppu>
+		<batters>
+			<batter id="1001">
+				<text> Regular </text>
+			</batter>
+		</batters>
+		<topping id="5002">
+			<text> Glazed </text>
+		</topping>
+		<topping id="5003">
+			<text> Chocolate </text>
+		</topping>
+		<topping id="5004">
+			<text> Maple </text>
+		</topping>
+		<topping id="5007">
+			<text> Powdered Sugar </text>
+		</topping>
+		
+		<fillings>
+			<filling id="7002">
+				<name> Custard </name>
+				<addcost> 0.25 </addcost>
+			</filling>
+			<filling id="7003">
+				<name> Whipped Cream </name>
+				<addcost> 0.25 </addcost>
+			</filling>
+			<filling id="7004">
+				<name> Strawberry Jelly</name>
+				<addcost> 0 </addcost>
+			</filling>
+			<filling id="7005">
+				<name> Rasberry Jelly </name>
+				<addcost> 0 </addcost>
+			</filling>
+		</fillings>
+	</item>
+</items>

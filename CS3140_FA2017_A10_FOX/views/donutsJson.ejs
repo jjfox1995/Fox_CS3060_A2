@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<title> Home </title>
+		<meta charset=”UTF-8”>
+		<link href = "/style/style10.css"
+			rel = "stylesheet"
+			type = "text/css"/>
+		<!-- Latest compiled and minified CSS -->
+		<h1 class="title"> Fox, Josiah </br> Assignment 10 </h1>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<h1 class="title"><%=head%> </h1>
+		
+		 <p class="welcome">Welcome to <%= head %></p>
+			
+			<table class="refTable">
+				<tr>
+					<th class= "bigItem"> Page </th>
+					<th class= "bigItem"> Description </th>
+				</tr>
+				<tr>
+					<td class="item"> <A HREF="booksJson">Books - Json</A> </td>
+					<td class="item"> Displays the list of books in the Json file</td>
+				</tr>
+				<tr>
+					<td class="item"> <A HREF="booksXML">Books - XML </A> </td>
+					<td class="item"> Displays the books from the XML file</td>				
+				</tr>
+				<tr>
+					<td class="item"> <A HREF="booksJsonraw">Books - Json (Raw) </A> </td>
+					<td class="item"> Displays the raw Json file with the book information</td>				
+				</tr>	
+				<tr>
+					<td class="item"> <A HREF="booksXMLraw">Books - XML (Raw) </A> </td>
+					<td class="item"> Displays the raw XML file with the book information</td>				
+				</tr>	
+				<tr>
+					<td class="item"> <A HREF="donutsJson">Donuts - Json</A> </td>
+					<td class="item"> Displays the list of Donuts in the Json file</td>
+				</tr>
+				<tr>
+					<td class="item"> <A HREF="donutsXML">Donuts - XML </A> </td>
+					<td class="item"> Displays the Donuts from the XML file</td>				
+				</tr>
+				<tr>
+					<td class="item"> <A HREF="donutsJsonraw">Donuts - Json (Raw) </A> </td>
+					<td class="item"> Displays the raw Json file with the book information</td>				
+				</tr>	
+				<tr>
+					<td class="item"> <A HREF="donutsXMLraw">Donuts - XML (Raw) </A> </td>
+					<td class="item"> Displays the raw XML file with the book information</td>				
+				</tr>				
+			</table> 
+			
+		<% var a=0 %>
+		<% var b=0 %>
+		<% var c=0 %>
+			<table class="bigTable">
+			<tr>
+				<th> Type </th>
+				<th> Name </th>
+				<th> Batters </th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th> Toppings </th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th> Fillings </th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>				
+			</tr>
+		<% donuts.forEach(function(item){ %>
+		
+		<% a=0 %>
+		<% b=0 %>
+		<% c=0 %>
+	
+        <tr>
+            <td class="item"><%= item["type"]%></td>
+            <td class="item"><%= item["name"] %></td>
+
+            <td class="item"><%= item["ppu"] %></td>
+			<% item.batters.batter.forEach(function(batter){%>
+				<% a++ %>
+					<td class="item"><%= batter["text"]%></td>
+			<% }) %>
+			
+			<% for (a; a < 4; a++) {%>
+						<td class="item"></td> 
+				<%} %>
+			
+			
+			<% if (item["topping"] !== undefined) { %>
+				<% for (var i = 0; i < item.topping.length; i++) {%>
+					<% b++ %>
+						<td class="item"><%= item.topping[i]["text"]%></td> 
+				<%} %>
+			<%} %>
+			<% for (b; b < 7; b++) {%>
+						<td class="item"></td> 
+				<%} %>
+			
+			<% if (item["fillings"] !== undefined) { %>
+				<% item.fillings.filling.forEach(function(filling){%>
+						<% c++ %>
+						<td class="item"><%= filling["name"]%></td>
+						<td class="item"><%= filling["addcost"]%></td>
+				<% }) %>
+			<%} %>
+			<% for (c; c < 4; c++) {%>
+						<td class="item"></td> 
+						<td class="item"></td> 
+				<%} %>
+			
+        </tr>
+    <% }) %>
+	</table>
+
+		
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.js"
+		  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		  crossorigin="anonymous">
+		</script>
+	</body>
+</html>
